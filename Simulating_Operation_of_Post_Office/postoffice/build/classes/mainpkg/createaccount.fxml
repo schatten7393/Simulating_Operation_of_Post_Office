@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CreateaccountController">
+   <children>
+      <Label alignment="CENTER" layoutX="337.0" layoutY="23.0" prefHeight="40.0" prefWidth="165.0" text="Create Account">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="85.0" prefHeight="30.0" prefWidth="75.0" text="First Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="245.0" prefHeight="30.0" prefWidth="75.0" text="E-mail:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="84.0" prefHeight="30.0" prefWidth="75.0" text="Last Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="276.0" layoutY="88.0" prefHeight="23.0" prefWidth="89.0" text="Middle Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="140.0" prefHeight="30.0" prefWidth="124.0" text="Parmanent Address:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="140.0" prefHeight="30.0" prefWidth="75.0" text="Country:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstnameTextField" layoutX="111.0" layoutY="83.0" prefHeight="30.0" prefWidth="156.0" />
+      <TextField fx:id="emailTextField" layoutX="168.0" layoutY="245.0" prefHeight="30.0" prefWidth="365.0" />
+      <TextField fx:id="middlenameTextField" layoutX="376.0" layoutY="83.0" prefHeight="30.0" prefWidth="156.0" />
+      <TextField fx:id="lastnameTextField" layoutX="661.0" layoutY="83.0" prefHeight="30.0" prefWidth="156.0" />
+      <TextField fx:id="parmanentaddressTextField" layoutX="168.0" layoutY="140.0" prefHeight="30.0" prefWidth="365.0" />
+      <TextField fx:id="countryTextField" layoutX="661.0" layoutY="140.0" prefHeight="30.0" prefWidth="156.0" />
+      <TextField fx:id="phonenumberTextField" layoutX="661.0" layoutY="245.0" prefHeight="30.0" prefWidth="156.0" />
+      <Label layoutX="28.0" layoutY="303.0" prefHeight="30.0" prefWidth="58.0" text="Gender:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="245.0" prefHeight="30.0" prefWidth="99.0" text="Phone Number:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Group layoutX="111.0" layoutY="200.0" />
+      <Label layoutX="574.0" layoutY="195.0" prefHeight="25.0" prefWidth="65.0" text="Zip Code:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="zipcodeTextField" layoutX="661.0" layoutY="192.0" prefHeight="30.0" prefWidth="156.0" />
+      <TextField fx:id="recentaddressTextField" layoutX="168.0" layoutY="192.0" prefHeight="30.0" prefWidth="365.0" />
+      <Label layoutX="28.0" layoutY="192.0" prefHeight="30.0" prefWidth="124.0" text="Recent Address:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Group layoutX="113.0" layoutY="310.0">
+         <children>
+            <RadioButton fx:id="maleRadioButton" mnemonicParsing="false" onMouseClicked="#maleRadioButton" prefHeight="20.0" prefWidth="141.0" text="Male">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="pickone" />
+               </toggleGroup>
+            </RadioButton>
+         </children>
+      </Group>
+      <RadioButton fx:id="femaleRadioButton" layoutX="178.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#femaleRadioButton" text="Female" toggleGroup="$pickone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="28.0" layoutY="360.0" prefHeight="30.0" prefWidth="70.0" text="User Type:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="usertypeComboBox" layoutX="126.0" layoutY="363.0" prefWidth="150.0" />
+      <Label layoutX="306.0" layoutY="304.0" prefHeight="23.0" prefWidth="58.0" text="Age:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ageTextField" layoutX="360.0" layoutY="298.0" prefHeight="30.0" prefWidth="70.0" />
+      <Label layoutX="553.0" layoutY="295.0" prefHeight="30.0" prefWidth="99.0" text="Date of Birth:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dobDatePicker" layoutX="657.0" layoutY="298.0" prefHeight="30.0" prefWidth="165.0" />
+      <Label fx:id="dojDatePicker" layoutX="553.0" layoutY="348.0" prefHeight="30.0" prefWidth="99.0" text="Date of Join:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="657.0" layoutY="348.0" prefHeight="30.0" prefWidth="165.0" />
+      <Button fx:id="submitButton" layoutX="704.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#submitButton" prefHeight="40.0" prefWidth="113.0" text="Submit">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="previouspageTextField" layoutX="55.0" layoutY="586.0" mnemonicParsing="false" onMouseClicked="#previouspageTextField" prefHeight="40.0" prefWidth="141.0" text="Previous Page">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="passwordTextField" layoutX="127.0" layoutY="405.0" prefHeight="30.0" prefWidth="149.0" />
+      <Label layoutX="22.0" layoutY="406.0" prefHeight="25.0" prefWidth="99.0" text="Create Password:" />
+   </children>
+</AnchorPane>
